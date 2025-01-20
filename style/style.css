@@ -332,9 +332,10 @@ ul {
     .menu-item {
         display: none;
     }
-
-    .mobile-bar {
+    .mobile-bar{
         display: block;
+    }
+    .mobile-bar i{
         font-size: 22px;
         cursor: pointer;
     }
