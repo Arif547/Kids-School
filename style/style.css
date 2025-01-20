@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", serif;
+}
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #111111;
+    --secondary-color: #FEA301;
+    --black: #000;
+    --white: #fff;
+    --sky-blue: #01ACFD;
+    --light-color: #808080;
+    --dark-blue: #8700FF;
+    --light-blue: #64c8ff;
+}
+
+.title {
+    font-family: "Quicksand", serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+}
+
+.btn {
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 10px 47px;
+    border-radius: 12px;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
