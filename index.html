@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/21d8b6e0f7.js" crossorigin="anonymous"></script>
     <title>School</title>
 </head>
+
 <body>
     <header class="container">
         <nav class="display-flex nav-bar">
@@ -22,7 +25,10 @@
                 </ul>
             </div>
             <div class="button">
-                <button class="btn">Contact</button>
+                <button class="btn nav-btn">Contact</button>
+                <i class="fa-solid fa-bars mobile-bar"></i>
+
+
             </div>
         </nav>
     </header>
@@ -30,16 +36,50 @@
     <main>
         <section class="hero-section container display-flex">
             <div class="hero-content">
-                <h2 class="hero-title"><span class="orange">Empowering</span> <br> students from small <br>age <span class="sky-blue">towards vision</span></h2>
-                <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                <h2 class="hero-title"><span class="orange">Empowering</span> <br> students from small <br>age <span
+                        class="sky-blue">towards vision</span></h2>
+                <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their Unique
+                    Contribution in a Diverse and Dynamic World.</p>
                 <button class="btn">Enroll Now</button>
             </div>
             <div class="hero-img">
                 <img src="assets/hero-kids.png" alt="hero-kids">
             </div>
-            
+
+        </section>
+
+        <section class="container">
+            <div class="curriculum-section">
+                <h2 class="title">Standard Curriculum</h2>
+                <div class="card-boxs ">
+                    <div class="card-box">
+                        <img src="assets/kinder.png" alt="">
+                        <h4 class="card-title">Kinder (3-6) Years</h4>
+                        <p class="card-desciption">Early childhood education focusing on basic literacy, numeracy, social skills, and play.</p>
+                        <button class="card-btn">Read More</button>
+                    </div>
+                    <div class="card-box card-2">
+                        <img src="assets/elementary.png" alt="">
+                        <h4 class="card-title">Elementary School</h4>
+                        <p class="card-desciption">foundational education for children aged 5-11, teaching basic academic subjects and social skills.</p>
+                        <button class="card-btn">Read More</button>
+                    </div>
+                    <div class="card-box card-3">
+                        <img src="assets/middle.png" alt="">
+                        <h4 class="card-title">Middle (10-16) Years</h4>
+                        <p class="card-desciption">Focus on advanced academics, critical thinking, social development, and extracurricular activities.</p>
+                        <button class="card-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="pagination display-flex">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>
