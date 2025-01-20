@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: "Quicksand", serif;
@@ -38,6 +38,11 @@ body{
     line-height: 57.5px;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 .btn {
     font-family: "Quicksand", serif;
     font-size: 20px;
@@ -47,13 +52,77 @@ body{
     border-radius: 12px;
     border-radius: 12px;
     background-color: var(--primary-color);
+    color: var(--white);
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: var(--secondary-color);
 }
 
-.container{
+.container {
     max-width: 1160px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.description {}
+
+/* Header style */
+
+.logo {
+    gap: 11px;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu {
+    gap: 32px;
+}
+
+.menu li {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu li:nth-child(2) {
+    color: var(--sky-blue);
+}
+
+.menu li:nth-child(3) {
+    color: #05D4DF;
+}
+
+.menu li:nth-child(4) {
+    color: #5D58EF;
+}
+
+.menu li:hover{
+    color: var(--primary-color);
+}
+
+.site-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
 }
