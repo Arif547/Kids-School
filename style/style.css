@@ -91,23 +91,23 @@ ul {
     color: var(--secondary-color);
 }
 
-.sky-blue{
+.sky-blue {
     color: var(--sky-blue);
 }
 
-.orange-bg{
+.orange-bg {
     background-color: var(--secondary-color);
 }
 
-.sky-blue-bg{
+.sky-blue-bg {
     background-color: var(--sky-blue);
 }
 
-.green-bg{
+.green-bg {
     background-color: var(--green);
 }
 
-.dark-blue-bg{
+.dark-blue-bg {
     background-color: var(--dark-blue);
 }
 
@@ -228,7 +228,7 @@ ul {
 
 /* Standard Curriculum Section */
 .curriculum-bg {
-    padding: 60px 0;
+    padding: 60px 20px;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -322,6 +322,34 @@ ul {
     background-color: #000;
 }
 
+/* marquee section */
+.marquee{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+.marquee-text{
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.3em;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
 
 /* Blog section */
 .blog-section {
@@ -341,14 +369,14 @@ ul {
 .blog-boxs {
     gap: 18px;
     padding: 60px 0;
-    
+
 }
 
-.blog-left{
+.blog-left {
     max-width: 540px;
 }
 
-.blog-right{
+.blog-right {
     flex: 1;
 }
 
@@ -375,7 +403,7 @@ ul {
     padding: 38px;
 }
 
-.blog-content-left{
+.blog-content-left {
     background-color: var(--white);
     border-radius: 0 0 16px 16px;
     padding: 58px 38px 34px;
@@ -401,12 +429,12 @@ ul {
     line-height: 28px;
 }
 
-.blog-content{
+.blog-content {
     position: relative;
     z-index: 1;
 }
 
-.post-date{
+.post-date {
     font-size: 16px;
     line-height: 18px;
     font-family: "Raleway", serif;
@@ -424,10 +452,68 @@ ul {
 
 
 /* Footer Section */
-.footer{
+.footer {
     background-color: var(--sky-blue);
     padding: 123px 0 173px;
 }
+
+.footer-section {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.kids-educatiom {
+    max-width: 400px;
+}
+
+.footer-logo {
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.footer-logo .site-title {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 39.50px;
+}
+
+.footer-desciption {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+
+.about-school li {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-school li:hover {
+    color: var(--dark-blue);
+}
+
+.keep-in-touch .social {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
 
 /* small device responsive */
 
@@ -450,7 +536,8 @@ ul {
 
     .site-title,
     .nav-btn,
-    .menu-item {
+    .menu-item,
+    .blog-left {
         display: none;
     }
 
@@ -498,7 +585,7 @@ ul {
 
     .curriculum-bg {
         background-size: contain;
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
 
@@ -509,6 +596,68 @@ ul {
 
     .pagination {
         display: none;
+    }
+
+    /* Blog Section */
+    .blog-right {
+        gap: 12px;
+    }
+
+    .blog-content {
+        padding: 22px 15px 20px 15px;
+    }
+
+
+
+    .blog-content .blog-title {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 17.5px;
+    }
+
+
+
+    .post-date {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 17px;
+        padding: 6px 11px;
+        left: 10px;
+        top: -20px;
+
+    }
+
+    /* footer section  */
+    .footer {
+        padding: 65px 0 60px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-logo .site-title {
+        display: block;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 33.5px;
+    }
+
+    .footer-desciption {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px
+    }
+
+    .about-school li {
+        font-size: 20px;
+        line-height: 25px;
     }
 
 }
