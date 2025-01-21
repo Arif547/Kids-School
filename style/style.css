@@ -209,7 +209,7 @@ ul {
 }
 
 /* Standard Curriculum Section */
-.curriculum-section {
+.curriculum-bg{
     padding: 60px 0;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
@@ -373,8 +373,8 @@ ul {
 
     /* Standard Curriculum Section */
 
-    .curriculum-section {
-        background-size: auto;
+    .curriculum-bg {
+        background-size: contain;
         padding: 40px 0;
     }
 
