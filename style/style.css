@@ -675,6 +675,10 @@ ul {
         line-height: 25px;
     }
 
+    .blog-boxs{
+        padding: 40px 0 20px;
+    }
+
 }
 
 /* middle device */
