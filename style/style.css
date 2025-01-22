@@ -526,9 +526,12 @@ ul {
 
 
 
+
+
+
 /* small device responsive */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
     header {
         border-bottom: 1px solid var(--secondary-color);
     }
@@ -670,5 +673,34 @@ ul {
         font-size: 20px;
         line-height: 25px;
     }
+
+}
+
+/* middle device */
+
+@media screen and (max-width: 1024px) and (min-width: 577px){
+    .post-date{
+    font-size: 16px;
+    line-height: 18px;
+    padding: 15px 20px;
+    left: 30px;
+        top: -25px;
+    }
+
+    .blog-content {
+        padding: 22px 15px 20px 15px;
+    }
+
+
+    .blog-content {
+        padding: 38px;
+    }
+
+    .blog-title {
+        font-size: 16px!important;
+        line-height: 29px;
+    }
+  
+   
 
 }
